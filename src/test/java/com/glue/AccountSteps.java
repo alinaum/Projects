@@ -63,6 +63,7 @@ public class AccountSteps {
 		assertThat(driver.getCurrentUrl(), is("https://www.netshoes.com.br/"));			
 		
 		assertThat(getUserName(), is (getUserLogged()));
+		resultscreenshot();
 	}
 
 	@When("^I do not all fill the mandatory fields")

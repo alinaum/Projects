@@ -1,4 +1,4 @@
-Feature: Account 
+Feature: User Account 
     Background: User is on Login page 
         Given that I'm in login page
         Then I should be able to see the login page

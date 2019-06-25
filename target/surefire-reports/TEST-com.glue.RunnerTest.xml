@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.glue.RunnerTest" time="71.292" tests="21" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.glue.RunnerTest" time="45.762" tests="21" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.3+7-Ubuntu-1ubuntu218.04.1"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-11-openjdk-amd64/lib"/>
-    <property name="maven.multiModuleProjectDirectory" value="/home/danilo/Documents/Test/java-cucumber-example"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/danilo/Documents/Cucumber-java"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -14,7 +14,7 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/home/danilo/Documents/Test/java-cucumber-example"/>
+    <property name="user.dir" value="/home/danilo/Documents/Cucumber-java"/>
     <property name="java.vm.compressedOopsMode" value="32-bit"/>
     <property name="java.runtime.version" value="11.0.3+7-Ubuntu-1ubuntu218.04.1"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
@@ -59,25 +59,25 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="Given that I&apos;m in login page" classname="Scenario: Client can create a new a account" time="0.001"/>
+  <testcase name="Given that I&apos;m in login page" classname="Scenario: Client can create a new a account" time="0.002"/>
   <testcase name="Then I should be able to see the login page" classname="Scenario: Client can create a new a account" time="0"/>
   <testcase name="Given that I informe my email" classname="Scenario: Client can create a new a account" time="0"/>
-  <testcase name="And I click in Prosseguir" classname="Scenario: Client can create a new a account" time="0.003"/>
+  <testcase name="And I click in Prosseguir" classname="Scenario: Client can create a new a account" time="0"/>
   <testcase name="When I fill the mandatory fields" classname="Scenario: Client can create a new a account" time="0"/>
-  <testcase name="And I press Continuar" classname="Scenario: Client can create a new a account" time="0"/>
+  <testcase name="And I press Continuar" classname="Scenario: Client can create a new a account" time="0.001"/>
   <testcase name="Then my new account is created" classname="Scenario: Client can create a new a account" time="0"/>
-  <testcase name="Scenario: Client can create a new a account" classname="Scenario: Client can create a new a account" time="0.174"/>
+  <testcase name="Scenario: Client can create a new a account" classname="Scenario: Client can create a new a account" time="0.24"/>
   <testcase name="Given that I&apos;m in login page" classname="Scenario: Account can&apos;t be create if one of te mandatory fields is missing" time="0"/>
-  <testcase name="Then I should be able to see the login page" classname="Scenario: Account can&apos;t be create if one of te mandatory fields is missing" time="0.001"/>
+  <testcase name="Then I should be able to see the login page" classname="Scenario: Account can&apos;t be create if one of te mandatory fields is missing" time="0"/>
   <testcase name="Given that I informe my email" classname="Scenario: Account can&apos;t be create if one of te mandatory fields is missing" time="0"/>
   <testcase name="And I click in Prosseguir" classname="Scenario: Account can&apos;t be create if one of te mandatory fields is missing" time="0"/>
   <testcase name="When I do not all fill the mandatory fields" classname="Scenario: Account can&apos;t be create if one of te mandatory fields is missing" time="0"/>
-  <testcase name="And I press Continuar" classname="Scenario: Account can&apos;t be create if one of te mandatory fields is missing" time="0"/>
+  <testcase name="And I press Continuar" classname="Scenario: Account can&apos;t be create if one of te mandatory fields is missing" time="0.001"/>
   <testcase name="Then The error message is displayed" classname="Scenario: Account can&apos;t be create if one of te mandatory fields is missing" time="0"/>
-  <testcase name="Scenario: Account can&apos;t be create if one of te mandatory fields is missing" classname="Scenario: Account can&apos;t be create if one of te mandatory fields is missing" time="0.158"/>
-  <testcase name="Given that I&apos;m on the home page" classname="Scenario: Client can go to login page" time="0.003"/>
+  <testcase name="Scenario: Account can&apos;t be create if one of te mandatory fields is missing" classname="Scenario: Account can&apos;t be create if one of te mandatory fields is missing" time="0.128"/>
+  <testcase name="Given that I&apos;m on the home page" classname="Scenario: Client can go to login page" time="0"/>
   <testcase name="When I click on Entrar" classname="Scenario: Client can go to login page" time="0"/>
   <testcase name="And I choose loggin" classname="Scenario: Client can go to login page" time="0"/>
-  <testcase name="Then I&apos;m on loggin Page" classname="Scenario: Client can go to login page" time="0"/>
-  <testcase name="Scenario: Client can go to login page" classname="Scenario: Client can go to login page" time="0.249"/>
+  <testcase name="Then I&apos;m on loggin Page" classname="Scenario: Client can go to login page" time="0.001"/>
+  <testcase name="Scenario: Client can go to login page" classname="Scenario: Client can go to login page" time="0.246"/>
 </testsuite>

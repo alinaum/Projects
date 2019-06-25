@@ -75,7 +75,8 @@ public class TestUtil {
   public static void resultscreenshot() {
     File src= ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
     try {
-      FileUtils.copyFile(src, new File("/home/danilo/Desktop/"+System.currentTimeMillis()+".png"));
+      String userHome = System.getProperty("user.home");
+      FileUtils.copyFile(src, new File(userHome+"/Desktop/"+System.currentTimeMillis()+".png"));
     }catch (IOException e) {
       System.out.println(e.getMessage());
     }
