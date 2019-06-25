@@ -1,0 +1,11 @@
+Feature: Account 
+    Background: User is on Login page 
+        Given that I'm in login page
+        Then I should be able to see the login page
+	
+	Scenario: Client can create a new a account	
+        Given that I informe my email
+        And I click in Prosseguir
+        When I Fill the mandatory fields
+        And I press bla
+        Then my new account is created

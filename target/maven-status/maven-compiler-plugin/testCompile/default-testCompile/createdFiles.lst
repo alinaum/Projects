@@ -1,0 +1,7 @@
+com/glue/User.class
+com/glue/LoginSteps.class
+support/GeraCpf.class
+com/glue/TestUtil.class
+com/glue/AccountSteps.class
+support/Browser.class
+com/glue/RunnerTest.class
