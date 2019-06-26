@@ -19,46 +19,16 @@ public class TestUtil {
   public static WebDriver driver;
   public static User pretty = new User();
   
-  public static WebElement any(String css) {
-    return any(driver.findElement(By.cssSelector("html")), css);
-  }
-  
-  public static WebElement any(WebElement parent, String css) {
-    try {
-      return parent.findElement(By.cssSelector(css));
-    } catch(NoSuchElementException e) {
-      return null;
-    }
-  }
-  
-  public static void addTodo(String text) {
-    any("#new-todo").sendKeys(text + "\n");
-  }
-
-  public static WebElement todoAt(int index) {
-    return any("#todo-list li:nth-child("+(index + 1)+")");
-  }
-  
-  public static void markTodoDone(WebElement todo) {
-    any(todo, "input.check").click();    
-  }
-  
-  public static boolean isDone(WebElement todo) {
-    return any(todo, ".todo.done") != null; 
-  }
   public static void goTologin() {
+      WebDriverWait wait = new WebDriverWait(driver, 15);
+      wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='header-user-anonymous']/a")));
       driver.findElement(By.xpath("//*[@id='header-user-anonymous']/a")).click();
   }
 
   public static void clickEntrarLogin() {
+    WebDriverWait wait = new WebDriverWait(driver, 15);
+    wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='header-user-anonymous']/ul/li[1]/a")));
     driver.findElement(By.xpath("//*[@id='header-user-anonymous']/ul/li[1]/a")).click();
-  }
-   
-  public static void deleteTodo(WebElement todo) {
-    new Actions(driver)
-      .moveToElement(todo)
-      .moveToElement(any(todo, ".todo-destroy"))
-      .click().build().perform();
   }
 
   public static void goToNewAccount() {
@@ -69,7 +39,7 @@ public class TestUtil {
   
   public static void emailNewAccount() {
     String emailRandom = "Pretty"+System.currentTimeMillis()+"@gmail.com";
-    driver.findElement(By.id("sign-up-username")).sendKeys(emailRandom);          
+    driver.findElement(By.id("sign-up-username")).sendKeys(emailRandom);         
   }
 
   public static void resultscreenshot() {
@@ -81,6 +51,7 @@ public class TestUtil {
       System.out.println(e.getMessage());
     }
   }
+
   public static void quitBrowserUtil() {
 		driver.quit();
   }
@@ -123,7 +94,60 @@ public class TestUtil {
 		driver.findElement(By.id("save-register-natural")).click(); 
   }
 
+  public static void goToAllCategories() {
+    driver.findElement(By.className("navbar__hamburger--title")).click();
+  }
+
+  public static void chooseOneItem() {
+    driver.findElement(By.xpath("//*[@id='header-content']/header/div[2]/div/div[2]/div/div[3]/ul[1]/li[2]")).click(); 
+  }
+
+  public static void chooseOneCategory() {
+    driver.findElement(By.xpath("//*[@id='header-content']/header/div[2]/div/div[2]/div/ul/li[1]")).click(); 
+    
+  }
+
+  public static void chooseFirstDisplay() {
+    WebDriverWait wait = new WebDriverWait(driver, 15);
+    wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='header-content']/header/div[2]/div/div[2]/div/div[3]/ul[1]/li[2]/a")));
+    driver.findElement(By.xpath("//*[@id='header-content']/header/div[2]/div/div[2]/div/div[3]/ul[1]/li[2]/a")).click();
+  }
+
+  public static void clickProduct() {
+    WebDriverWait wait = new WebDriverWait(driver, 15);
+    wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='item-list']/div[1]/div[1]/div[2]/a")));
+    driver.findElement(By.xpath("//*[@id='item-list']/div[1]/div[1]/div[2]/a")).click();
+  }
+
+  public static void clickHeart() {
+    driver.findElement(By.className("wishlist__heart")).click();
+  }
+
+  
+  public static void logInUser() {
+    pretty.setName("Pretty Name");
+    String emailUser =  "Pretty1561491414916@gmail.com";
+    String passwordUser = "Senha!@3";
+
+    WebDriverWait wait = new WebDriverWait(driver, 15);
+    wait.until(ExpectedConditions.elementToBeClickable(By.id("login-button")));
+
+    driver.findElement(By.id("username")).sendKeys(emailUser); 
+    driver.findElement(By.id("password")).sendKeys(passwordUser);  
+    driver.findElement(By.id("login-button")).click(); 
+    
+  }
+
+  public static String getColorHeart() {
+    WebDriverWait wait = new WebDriverWait(driver, 15);
+    wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='buy-button-wrapper']/div/span/i")));
+    String color = driver.findElement(By.xpath("//*[@id='buy-button-wrapper']/div/span/i")).getCssValue("color");
+    return color;
+  }
+
   public static  String getUserLogged() {
+    WebDriverWait wait = new WebDriverWait(driver, 15);
+    wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("username-logged")));
     String userLogged = driver.findElement(By.id("username-logged")).getText();
     return userLogged;
   }
@@ -138,4 +162,5 @@ public class TestUtil {
     String errorMessage = driver.findElement(By.className("error-message")).getText();
     return errorMessage;
   }
+
 }

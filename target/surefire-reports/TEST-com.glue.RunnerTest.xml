@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.glue.RunnerTest" time="45.762" tests="21" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.glue.RunnerTest" time="92.507" tests="32" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.3+7-Ubuntu-1ubuntu218.04.1"/>
@@ -64,20 +64,31 @@
   <testcase name="Given that I informe my email" classname="Scenario: Client can create a new a account" time="0"/>
   <testcase name="And I click in Prosseguir" classname="Scenario: Client can create a new a account" time="0"/>
   <testcase name="When I fill the mandatory fields" classname="Scenario: Client can create a new a account" time="0"/>
-  <testcase name="And I press Continuar" classname="Scenario: Client can create a new a account" time="0.001"/>
-  <testcase name="Then my new account is created" classname="Scenario: Client can create a new a account" time="0"/>
-  <testcase name="Scenario: Client can create a new a account" classname="Scenario: Client can create a new a account" time="0.24"/>
+  <testcase name="And I press Continuar" classname="Scenario: Client can create a new a account" time="0"/>
+  <testcase name="Then my new account is created" classname="Scenario: Client can create a new a account" time="0.001"/>
+  <testcase name="Scenario: Client can create a new a account" classname="Scenario: Client can create a new a account" time="0.21"/>
   <testcase name="Given that I&apos;m in login page" classname="Scenario: Account can&apos;t be create if one of te mandatory fields is missing" time="0"/>
   <testcase name="Then I should be able to see the login page" classname="Scenario: Account can&apos;t be create if one of te mandatory fields is missing" time="0"/>
-  <testcase name="Given that I informe my email" classname="Scenario: Account can&apos;t be create if one of te mandatory fields is missing" time="0"/>
+  <testcase name="Given that I informe my email" classname="Scenario: Account can&apos;t be create if one of te mandatory fields is missing" time="0.001"/>
   <testcase name="And I click in Prosseguir" classname="Scenario: Account can&apos;t be create if one of te mandatory fields is missing" time="0"/>
   <testcase name="When I do not all fill the mandatory fields" classname="Scenario: Account can&apos;t be create if one of te mandatory fields is missing" time="0"/>
-  <testcase name="And I press Continuar" classname="Scenario: Account can&apos;t be create if one of te mandatory fields is missing" time="0.001"/>
+  <testcase name="And I press Continuar" classname="Scenario: Account can&apos;t be create if one of te mandatory fields is missing" time="0"/>
   <testcase name="Then The error message is displayed" classname="Scenario: Account can&apos;t be create if one of te mandatory fields is missing" time="0"/>
-  <testcase name="Scenario: Account can&apos;t be create if one of te mandatory fields is missing" classname="Scenario: Account can&apos;t be create if one of te mandatory fields is missing" time="0.128"/>
+  <testcase name="Scenario: Account can&apos;t be create if one of te mandatory fields is missing" classname="Scenario: Account can&apos;t be create if one of te mandatory fields is missing" time="0.138"/>
+  <testcase name="Given I&apos;m in the home page to press heart" classname="Scenario: Client logged in can add item to favority list" time="0"/>
+  <testcase name="And I go to login" classname="Scenario: Client logged in can add item to favority list" time="0"/>
+  <testcase name="And I fill my user name and password" classname="Scenario: Client logged in can add item to favority list" time="0"/>
+  <testcase name="Then I should be logged in" classname="Scenario: Client logged in can add item to favority list" time="0"/>
+  <testcase name="Given that I click on the Todas as categorias tab" classname="Scenario: Client logged in can add item to favority list" time="0"/>
+  <testcase name="And I choose one category" classname="Scenario: Client logged in can add item to favority list" time="0"/>
+  <testcase name="And I choose the first item from the category" classname="Scenario: Client logged in can add item to favority list" time="0"/>
+  <testcase name="And I choose the first display item" classname="Scenario: Client logged in can add item to favority list" time="0"/>
+  <testcase name="And I click on favority list icon" classname="Scenario: Client logged in can add item to favority list" time="0"/>
+  <testcase name="Then the item is added to favority list" classname="Scenario: Client logged in can add item to favority list" time="0"/>
+  <testcase name="Scenario: Client logged in can add item to favority list" classname="Scenario: Client logged in can add item to favority list" time="0.294"/>
   <testcase name="Given that I&apos;m on the home page" classname="Scenario: Client can go to login page" time="0"/>
   <testcase name="When I click on Entrar" classname="Scenario: Client can go to login page" time="0"/>
   <testcase name="And I choose loggin" classname="Scenario: Client can go to login page" time="0"/>
-  <testcase name="Then I&apos;m on loggin Page" classname="Scenario: Client can go to login page" time="0.001"/>
-  <testcase name="Scenario: Client can go to login page" classname="Scenario: Client can go to login page" time="0.246"/>
+  <testcase name="Then I&apos;m on loggin Page" classname="Scenario: Client can go to login page" time="0"/>
+  <testcase name="Scenario: Client can go to login page" classname="Scenario: Client can go to login page" time="0.244"/>
 </testsuite>

@@ -5,3 +5,4 @@ com/glue/TestUtil.class
 com/glue/AccountSteps.class
 support/Browser.class
 com/glue/RunnerTest.class
+com/glue/FavoritySteps.class

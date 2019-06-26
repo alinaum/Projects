@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.glue.RunnerTest
 -------------------------------------------------------------------------------
-Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 45.762 sec - in com.glue.RunnerTest
+Tests run: 32, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 92.507 sec - in com.glue.RunnerTest
